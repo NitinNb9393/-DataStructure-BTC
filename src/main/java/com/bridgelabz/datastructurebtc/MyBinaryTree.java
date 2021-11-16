@@ -9,7 +9,7 @@ public class MyBinaryTree<K extends Comparable<K>> {
 
 	private MyBinaryNode<K> addRecursively(MyBinaryNode<K> current, K key) {
 		if (current == null)
-			return new MyBinaryNode<K>(key);
+			return new MyBinaryNode<>(key);
 		int compareResult = key.compareTo(current.key);
 		if (compareResult == 0)
 			return current;
